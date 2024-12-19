@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LIST-IFY | Task Manager</title>
+  <title>TASKBUDDY | Task Manager</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
@@ -12,23 +12,34 @@
 <body>
   <header>
     <div class="container">
-      <h1><span>LIST-IFY</span> 📝</h1>
-      <button id="themeToggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+      <h1><span>TASK-Buddy</span> 🏋️‍♀️</h1>
+      <h4>List Now Progress Everyday<h4></h4>
+
+    </div>
+    <button id="theme-toggle">🔆</button>
+    </div>
+    <select id="language-selector" aria-label="Select Language">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="es">Nepali</option>
+    </select>
     </div>
   </header>
 
   <main>
     <section class="task-input">
-      <h2>Add Your Tasks</h2>
+      <h2>GET STARTED</h2>
       <div class="input-container">
         <input type="text" id="task-input" placeholder="Enter your task..." aria-label="Task input field">
         <select id="priority" aria-label="Priority selection">
           <option value="1">🔥 High</option>
-          <option value="2">⚡ Medium</option>
-          <option value="3">🌱 Low</option>
+          <option value="2">💪 Medium</option>
+          <option value="3">🍿 Low</option>
         </select>
-        <button id="add-task" aria-label="Add Task">➕ Add Task</button>
-      </div>
+        <button id="add-task" aria-label="Add Task">➕ Add </button>
+        <audio id="task-sound" src="audio/notification-21-270139.mp3" preload="auto"></audio>
+
+
     </section>
 
     <section class="task-table-section">
@@ -36,10 +47,12 @@
       <table id="task-table">
         <thead>
           <tr>
-            <th>#</th>
+
             <th>Task</th>
             <th>Priority</th>
             <th>Actions</th>
+            <th>Due</th>
+
           </tr>
         </thead>
         <tbody>
@@ -47,6 +60,7 @@
       </table>
     </section>
 
+    </section>
     <section class="task-stats">
       <p id="task-summary">
         <span id="completed-tasks">0</span> Completed | <span id="pending-tasks">0</span> Pending
@@ -55,7 +69,13 @@
   </main>
 
   <footer>
-    <p>Made with 💻 by Coding BRUS Team | &copy; 2024 List-ify</p>
+    <p>Get Active With | TASK-Buddy </p>
+    </p>Follow us on:
+    <a href="https://twitter.com" target="_blank">🐦</a> |
+    <a href="https://github.com" target="_blank">🐙</a> |
+    <a href="https://linkedin.com" target="_blank">💼</a>
+    </p>
+
   </footer>
 </body>
 
