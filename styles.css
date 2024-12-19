@@ -164,12 +164,12 @@ button:disabled {
 }
 
 .complete-btn {
-  background-color: #ff9800;
+  background-color: #f2aa3f;
   transition: background-color 0.3s ease;
 }
 
 .complete-btn:hover {
-  background-color: #5252e6;
+  background-color: #e88f13;
 }
 
 .edit-btn {
@@ -178,7 +178,7 @@ button:disabled {
 }
 
 .edit-btn:hover {
-  background-color: #4CAF50;
+  background-color: #14ec1b;
 }
 
 .save-btn {
@@ -187,16 +187,16 @@ button:disabled {
 }
 
 .save-btn:hover {
-  background-color: #007bff;
+  background-color: #0b13f3;
 }
 
 .delete-btn {
-  background-color: #f44336;
+  background-color: #f65145;
   transition: background-color 0.3s ease;
 }
 
 .delete-btn:hover {
-  background-color: #f44336;
+  background-color: #ec2113;
 }
 
 .completed {
